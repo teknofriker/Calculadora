@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center_vertical"
+        android:text="calculadora de ozlem" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button android:text="7"
+            android:onClick="onDigitClick" />
+        <Button android:text="8" android:onClick="onDigitClick" />
+        <Button android:text="9" android:onClick="onDigitClick" />
+        <Button android:text="/" android:onClick="onOperatorClick" />
+
+        <Button android:text="4" android:onClick="onDigitClick" />
+        <Button android:text="5"
+            android:onClick="onDigitClick" />
+        <Button android:text="6" android:onClick="onDigitClick" />
+        <Button android:text="*" android:onClick="onOperatorClick" />
+
+        <Button android:text="1" android:onClick="onDigitClick" />
+        <Button android:text="2" android:onClick="onDigitClick" />
+        <Button android:text="3" android:onClick="onDigitClick" />
+
+        <Button android:text="0" android:onClick="onDigitClick" />
+        <Button android:text="." android:onClick="onDecimalClick" />
+        <Button android:text="=" android:onClick="onEqualsClick" />
+        <Button android:text="+" android:onClick="onOperatorClick" />
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="calcula"
+            tools:ignore="DuplicateIds" />
+
+    </GridLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

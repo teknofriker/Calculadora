@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/mountains"
+        android:scaleType="centerCrop" />
+
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        tools:ignore="MissingConstraints">
+
+    <Button android:text="7"
+        android:onClick="onDigitClick" />
+    <Button android:text="8" android:onClick="onDigitClick" />
+    <Button android:text="9" android:onClick="onDigitClick" />
+    <Button android:text="/" android:onClick="onOperatorClick" />
+
+    <Button android:text="4" android:onClick="onDigitClick" />
+    <Button android:text="5"
+        android:onClick="onDigitClick" />
+    <Button android:text="6" android:onClick="onDigitClick" />
+    <Button android:text="*" android:onClick="onOperatorClick" />
+
+    <Button android:text="1" android:onClick="onDigitClick" />
+    <Button android:text="2" android:onClick="onDigitClick" />
+    <Button android:text="3" android:onClick="onDigitClick" />
+
+    <Button android:text="0" android:onClick="onDigitClick" />
+    <Button android:text="." android:onClick="onDecimalClick" />
+    <Button android:text="=" android:onClick="onEqualsClick" />
+    <Button android:text="+" android:onClick="onOperatorClick" />
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="calcula"
+        tools:ignore="DuplicateIds" />
+    </GridLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
